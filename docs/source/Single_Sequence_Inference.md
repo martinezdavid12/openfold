@@ -26,7 +26,7 @@ python run_pretrained_openfold.py \
     data/pdb_mmcif/mmcif_files/ \
     --use_precomputed_alignments embeddings_output_dir \
     --output_dir ./ \
-    --model_device "cuda:0" \
+    --model_device "cuda" \
     --config_preset "seq_model_esm1b_ptm" \
     --openfold_checkpoint_path openfold/resources/openfold_soloseq_params/seq_model_esm1b_ptm.pt
 ```
@@ -38,7 +38,7 @@ python3 run_pretrained_openfold.py \
     fasta_dir \
     data/pdb_mmcif/mmcif_files/ \
     --output_dir ./ \
-    --model_device "cuda:0" \
+    --model_device "cuda" \
     --config_preset "seq_model_esm1b_ptm" \
     --openfold_checkpoint_path openfold/resources/openfold_soloseq_params/seq_model_esm1b_ptm.pt \
     --uniref90_database_path data/uniref90/uniref90.fasta \

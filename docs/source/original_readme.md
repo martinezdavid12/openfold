@@ -160,7 +160,7 @@ python3 run_pretrained_openfold.py \
     --hhsearch_binary_path lib/conda/envs/openfold_venv/bin/hhsearch \
     --kalign_binary_path lib/conda/envs/openfold_venv/bin/kalign \
     --config_preset "model_1_ptm" \
-    --model_device "cuda:0" \
+    --model_device "cuda" \
     --output_dir ./ \
     --openfold_checkpoint_path openfold/resources/openfold_params/finetuning_ptm_2.pt
 ```
@@ -262,7 +262,7 @@ python3 run_pretrained_openfold.py \
     --hmmbuild_binary_path lib/conda/envs/openfold_venv/bin/hmmbuild \
     --kalign_binary_path lib/conda/envs/openfold_venv/bin/kalign \
     --config_preset "model_1_multimer_v3" \
-    --model_device "cuda:0" \
+    --model_device "cuda" \
     --output_dir ./ 
 ```
 
@@ -334,7 +334,7 @@ python run_pretrained_openfold.py \
     data/pdb_mmcif/mmcif_files/ \
     --use_precomputed_alignments embeddings_output_dir \
     --output_dir ./ \
-    --model_device "cuda:0" \
+    --model_device "cuda" \
     --config_preset "seq_model_esm1b_ptm" \
     --openfold_checkpoint_path openfold/resources/openfold_soloseq_params/seq_model_esm1b_ptm.pt
 ```
@@ -345,7 +345,7 @@ python3 run_pretrained_openfold.py \
     fasta_dir \
     data/pdb_mmcif/mmcif_files/ \
     --output_dir ./ \
-    --model_device "cuda:0" \
+    --model_device "cuda" \
     --config_preset "seq_model_esm1b_ptm" \
     --openfold_checkpoint_path openfold/resources/openfold_soloseq_params/seq_model_esm1b_ptm.pt \
     --uniref90_database_path data/uniref90/uniref90.fasta \
@@ -541,7 +541,7 @@ python3 /opt/openfold/run_pretrained_openfold.py \
 --uniclust30_database_path /database/uniclust30/uniclust30_2018_08/uniclust30_2018_08 \
 --output_dir /data \
 --bfd_database_path /database/bfd/bfd_metaclust_clu_complete_id30_c90_final_seq.sorted_opt \
---model_device cuda:0 \
+--model_device cuda:1 \
 --jackhmmer_binary_path /opt/conda/bin/jackhmmer \
 --hhblits_binary_path /opt/conda/bin/hhblits \
 --hhsearch_binary_path /opt/conda/bin/hhsearch \

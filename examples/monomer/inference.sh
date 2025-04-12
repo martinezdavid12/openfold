@@ -11,6 +11,6 @@ python3 run_pretrained_openfold.py $FASTA_DIR \
   $MMCIF_DIR \
   --output_dir $OUTPUT_DIR \
   --config_preset model_1_ptm \
-  --model_device "cuda:0" \
+  --model_device "cuda" \
   --data_random_seed 42 \
   --use_precomputed_alignments $PRECOMPUTED_ALIGNMENT_DIR 

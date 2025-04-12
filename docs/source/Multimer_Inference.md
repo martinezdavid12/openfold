@@ -68,7 +68,7 @@ python3 run_pretrained_openfold.py \
     --hmmbuild_binary_path lib/conda/envs/openfold_venv/bin/hmmbuild \
     --kalign_binary_path lib/conda/envs/openfold_venv/bin/kalign \
     --config_preset "model_1_multimer_v3" \
-    --model_device "cuda:0" \
+    --model_device "cuda" \
     --output_dir ./ 
 ```
 

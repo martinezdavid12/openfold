@@ -406,7 +406,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--model_device", type=str, default="cpu",
         help="""Name of the device on which to run the model. Any valid torch
-             device name is accepted (e.g. "cpu", "cuda:0")"""
+             device name is accepted (e.g. "cpu", "cuda")"""
     )
     parser.add_argument(
         "--config_preset", type=str, default="model_1",

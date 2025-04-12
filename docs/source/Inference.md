@@ -67,7 +67,7 @@ python3 run_pretrained_openfold.py \
     --pdb70_database_path $BASE_DATA_DIR/pdb70 \
     --uniclust30_database_path $BASE_DATA_DIR/uniclust30/uniclust30_2018_08/uniclust30_2018_08 \
     --bfd_database_path $BASE_DATA_DIR/bfd/bfd_metaclust_clu_complete_id30_c90_final_seq.sorted_opt \
-    --model_device "cuda:0" 
+    --model_device "cuda" 
 ```
 
 **Required arguments:**
@@ -86,7 +86,7 @@ python3 run_pretrained_openfold.py ${INPUT_FASTA_DIR} \
   --output_dir $OUTPUT_DIR \
   --use_precomputed_alignments $PRECOMPUTED_ALIGNMENTS \
   --config_preset model_1_ptm \
-  --model_device "cuda:0" \
+  --model_device "cuda" \
 ```
 
 where `$PRECOMPUTED_ALIGNMENTS` is a directory that contains alignments. A sample alignments directory structure for a single query is:
